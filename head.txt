@@ -1,0 +1,189 @@
+﻿<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* 重置和基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+}
+
+/* 头部导航样式 */
+.header {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.site-title {
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    position: relative;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #f1c40f;
+    transform: translateY(-2px);
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #f1c40f;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* 通用页面容器样式 */
+.page-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.content-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* 通用表格样式 */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.data-table th {
+    background: linear-gradient(45deg, #1a73e8, #289cf5);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+}
+
+.data-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.data-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* 通用按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #1a73e8, #289cf5);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.2);
+}
+
+/* 通用表单样式 */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-item {
+        padding: 0.5rem;
+    }
+    
+    .site-title {
+        font-size: 2rem;
+    }
+    
+    .content-card {
+        padding: 1rem;
+    }
+}
+</style>
+
+<div class="header">
+    <div class="nav-container">
+        <h1 class="site-title">智机优选手机销售网</h1>
+        <nav class="nav-menu">
+            <a href="inputRegisterMess.jsp" class="nav-item">注册</a>
+            <a href="login.jsp" class="nav-item">登录</a>
+            <a href="lookMobile.jsp" class="nav-item">浏览手机</a>
+            <a href="searchMobile.jsp" class="nav-item">查询手机</a>
+            <a href="lookShoppingCar.jsp" class="nav-item">查看购物车</a>
+            <a href="lookOrderForm.jsp" class="nav-item">查看订单</a>
+            <a href="exitServlet" class="nav-item">退出</a>
+            <a href="index.jsp" class="nav-item">主页</a>
+        </nav>
+    </div>
+</div>
