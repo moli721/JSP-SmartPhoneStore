@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JSP-SmartPhoneStore">
+    <output-path>$PROJECT_DIR$/out/artifacts/JSP_SmartPhoneStore</output-path>
+    <root id="archive" name="JSP-SmartPhoneStore.war" />
+  </artifact>
+</component>
