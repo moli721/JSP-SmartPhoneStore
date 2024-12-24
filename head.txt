@@ -176,14 +176,15 @@ body {
     <div class="nav-container">
         <h1 class="site-title">智机优选手机销售网</h1>
         <nav class="nav-menu">
-            <a href="inputRegisterMess.jsp" class="nav-item">注册</a>
-            <a href="login.jsp" class="nav-item">登录</a>
-            <a href="lookMobile.jsp" class="nav-item">浏览手机</a>
-            <a href="searchMobile.jsp" class="nav-item">查询手机</a>
-            <a href="lookShoppingCar.jsp" class="nav-item">查看购物车</a>
-            <a href="lookOrderForm.jsp" class="nav-item">查看订单</a>
-            <a href="exitServlet" class="nav-item">退出</a>
-            <a href="index.jsp" class="nav-item">主页</a>
+            <a href="/ch10/inputRegisterMess.jsp" class="nav-item">注册</a>
+            <a href="/ch10/login.jsp" class="nav-item">登录</a>
+            <a href="/ch10/lookMobile.jsp" class="nav-item">浏览手机</a>
+            <a href="/ch10/searchMobile.jsp" class="nav-item">查询手机</a>
+            <a href="/ch10/lookShoppingCar.jsp" class="nav-item">查看购物车</a>
+            <a href="/ch10/lookOrderForm.jsp" class="nav-item">查看订单</a>
+            <a href="/ch10/chatroom/chat.jsp" class="nav-item">聊天室</a>
+            <a href="/ch10/exitServlet" class="nav-item">退出</a>
+            <a href="/ch10/index.jsp" class="nav-item">主页</a>
         </nav>
     </div>
 </div>
