@@ -32,3 +32,15 @@ create table orderForm(orderNumber int not null auto_increment,
                   logname char(30) character set gb2312,
                   mess varchar(5000) character set gb2312,
                   primary key(orderNumber));
+
+CREATE TABLE chat_messages (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id VARCHAR(50),
+    message TEXT,
+    send_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE online_users (
+    user_id VARCHAR(50) PRIMARY KEY,
+    login_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
